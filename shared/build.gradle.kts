@@ -1,11 +1,8 @@
 plugins {
     id("com.android.library")
     kotlin("android")
-    kotlin("plugin.serialization") version "1.9.0"
+    kotlin("plugin.serialization")
 }
-
-group = "com.openclaw"
-version = "1.0.0"
 
 android {
     namespace = "com.openclaw.mobile.shared"
@@ -13,7 +10,6 @@ android {
 
     defaultConfig {
         minSdk = 24
-        targetSdk = 34
     }
 
     compileOptions {
@@ -24,11 +20,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-}
-
-repositories {
-    google()
-    mavenCentral()
 }
 
 dependencies {
